@@ -1,0 +1,12 @@
+mkdir -p /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/lxdialog
+PKG_CONFIG_PATH="" make CC="/usr/bin/gcc" HOSTCC="/usr/bin/gcc" \
+    obj=/home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config -C support/kconfig -f Makefile.br conf
+/usr/bin/gcc   -DCURSES_LOC="<ncurses.h>" -DNCURSES_WIDECHAR=1 -DLOCALE  -I/home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config -DCONFIG_=\"\"  -MM *.c > /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/.depend 2>/dev/null || :
+/usr/bin/gcc   -DCURSES_LOC="<ncurses.h>" -DNCURSES_WIDECHAR=1 -DLOCALE  -I/home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config -DCONFIG_=\"\"   -c conf.c -o /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/conf.o
+/usr/bin/gcc   -DCURSES_LOC="<ncurses.h>" -DNCURSES_WIDECHAR=1 -DLOCALE  -I/home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config -DCONFIG_=\"\"  -I. -c /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/zconf.tab.c -o /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/zconf.tab.o
+/usr/bin/gcc   -DCURSES_LOC="<ncurses.h>" -DNCURSES_WIDECHAR=1 -DLOCALE  -I/home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config -DCONFIG_=\"\"   /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/conf.o /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/zconf.tab.o  -o /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/conf
+rm /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/build/buildroot-config/zconf.tab.c
+  GEN     /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/Makefile
+#
+# configuration written to /home/suweishuai/learn/buildroot/ok6410-a/buildroot/OUT/.config
+#
