@@ -1,0 +1,19 @@
+#! /bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+LD_LIBRARY_PATH=/lib
+export PATH LD_LIBRARY_PATH
+
+mount -a
+mkdir -p /dev/pts
+mount -t devpts devpts /dev/pts
+mdev -s
+mkdir -p /var/lock
+
+# 2019-1-9 10:01:40 添加 内核 uevent_helper 启动的默认进程
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+echo "-----------------------------------"
+
+echo " welcome to A9 vexpress board"
+
+echo "-----------------------------------"

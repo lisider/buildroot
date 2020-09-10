@@ -12,6 +12,8 @@ SYSVINIT_LICENSE = GPL-2.0+
 SYSVINIT_LICENSE_FILES = COPYING
 
 SYSVINIT_MAKE_OPTS = SYSROOT=$(STAGING_DIR)
+TARGET_CC=/home/suweishuai/bin/tools/arm/4.3.2/bin/arm-linux-gcc
+TARGET_LD=/home/suweishuai/bin/tools/arm/4.3.2/bin/arm-linux-ld
 
 # Override BusyBox implementations if BusyBox is enabled.
 ifeq ($(BR2_PACKAGE_BUSYBOX),y)

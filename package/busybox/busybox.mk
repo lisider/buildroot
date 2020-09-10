@@ -43,7 +43,7 @@ BUSYBOX_MAKE_ENV += \
 endif
 
 BUSYBOX_MAKE_OPTS = \
-	CC="$(TARGET_CC)" \
+	CC="/home/suweishuai/bin/tools/arm/4.3.2/bin/arm-linux-gcc" \
 	ARCH=$(KERNEL_ARCH) \
 	PREFIX="$(TARGET_DIR)" \
 	EXTRA_LDFLAGS="$(BUSYBOX_LDFLAGS)" \

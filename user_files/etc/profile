@@ -1,0 +1,3 @@
+
+PS1='wit@vexpress:\w # ' 
+export PS1 
